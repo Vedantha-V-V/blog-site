@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Press</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h2>TechPress</h2>
+        </div>
+        <div class="articles">
+        {% for article in articles_list %}
+            <a href="{{ url_for('article_page',id=article['id']) }}">
+                <div class="article-card">
+                    <h3>{{ article["title"] }}</h3>
+                    <h3 class="date">{{ article["date"] }}</h3>
+                </div>
+            </a>
+        {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

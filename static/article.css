@@ -1,0 +1,28 @@
+.container{
+    font-family:Verdana;
+    display:flex;
+    flex-direction:column;
+    margin:10px;
+    border:solid;
+    border-color:black;
+    border-radius:20px;
+    background-color:whitesmoke;
+    padding:10px;
+}
+
+.header{
+    font-family:Verdana;
+    font-weight:bold;
+    padding-top:10px;
+}
+
+.date{
+    font-family:Verdana;
+    padding-top:5px;
+    color:gray;
+    font-weight: 600;
+}
+
+p{
+    font-family:Verdana;
+}

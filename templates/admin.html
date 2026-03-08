@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="heading">
+            <h2>TechPress</h2>
+            <a href="{{ url_for('add_article') }}"><button class="add">Add</button></a>
+        </div>
+        <div class="articles">
+        {% for article in articles_list %}
+            <div class="article-card">
+                <div>
+                    <h3>{{ article["title"] }}</h3>
+                </div>
+                <div>
+                    <a href="{{ url_for('edit_article',id=article['id']) }}"><button class="edit">Edit</button></a>
+                    <button class="edit">Delete</button>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div> 
 </body>
 </html>

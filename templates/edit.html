@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edit Article</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='add.css') }}">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="heading">
+            <h2>Update Article</h2>
+        </div>
+        <form>
+            <label></label>
+            <input id="title" type="text" placeholder="Article Title">
+            <input id="date" type="text" placeholder="Publishing Date">
+            <textarea id="content">Content</textarea>
+            <button>Update</button>
+        </form>
+    </div>
 </body>
 </html>

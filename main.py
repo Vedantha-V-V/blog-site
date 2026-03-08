@@ -12,20 +12,20 @@ def home_page():
 @app.route("/article/<id>")
 def article_page(id):
     article = fetch_article_by_id(id)
-    print(article)
     return render_template("article.html",article=article)
 
 @app.route("/admin")
 def admin_page():
-    return 'Index Page'
+    articles_list = fetch_articles()
+    return render_template("admin.html",articles_list=articles_list)
 
-@app.route("/edit/<int:id>")
-def edit_article():
+@app.route("/edit/<id>")
+def edit_article(id):
     return 'Index Page'
 
 @app.route("/new")
 def add_article():
-    return 'Index Page'
+    return render_template("add.html")
 
 def main():
     app.run(debug=True)

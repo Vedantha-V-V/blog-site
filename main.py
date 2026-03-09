@@ -12,7 +12,6 @@ def home_page():
 @app.route("/article/<id>",methods=['GET','POST'])
 def article_page(id):
     print(id)
-    print(request.method)
     if(request.method == 'POST'):
         title = request.form.get('title')
         date = request.form.get('date')

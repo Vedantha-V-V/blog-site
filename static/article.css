@@ -11,9 +11,18 @@
 }
 
 .header{
-    font-family:Verdana;
-    font-weight:bold;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-between;
     padding-top:10px;
+}
+
+.title{
+    font-family:Verdana;
+    padding-top:5px;
+    color:black;
+    font-weight: 600;
 }
 
 .date{
@@ -25,4 +34,17 @@
 
 p{
     font-family:Verdana;
+}
+
+a{
+    text-decoration:none;
+}
+
+button{
+    background-color:transparent;
+    border:none;
+    font-size: large;
+    font-weight:bold;
+    margin-right:30px;
+    color:black;
 }

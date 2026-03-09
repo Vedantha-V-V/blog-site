@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='article.css') }}">
 </head>
 <body>
-    <div class="container">      
-        <span class="header">{{ article["title"] }}</span>
+    <div class="container">   
+        <div class="header">
+            <span class="title">{{ article["title"] }}</span>
+            <a href="{{ url_for('home_page') }}"><button>Home</button></a>
+        </div>   
+
         <span class="date">{{ article["date"] }}</span>
         <p>{{ article["description"] }}</p>
-        <a href="{{ url_for('home_page') }}"><button>Home</button></a>
     </div>
 </body>
 </html>

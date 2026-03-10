@@ -7,6 +7,6 @@ Personal blog website to write and publish articles on various topics and docume
 
 Python, Flask, HTML, CSS
 
-### Project URL
+### Project Link
 
 [Personal Blog](https://roadmap.sh/projects/personal-blog)

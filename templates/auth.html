@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='add.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h2>Login</h2>
+        </div>
+        <form action="{{ url_for('authentication',page=page) }}" method="POST">
+            <input id="title" name="username" type="text" placeholder="Username">
+            <input id="date" name="password" type="text" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+    </div> 
+</body>
+</html>

@@ -11,7 +11,7 @@
         <div class="heading">
             <h2>New Article</h2>
         </div>
-        <form action="{{ url_for('admin_page') }}" method="POST">
+        <form action="{{ url_for('add_form') }}" method="POST">
             <input id="title" name="title" type="text" placeholder="Article Title">
             <input id="date" name="date" type="text" placeholder="Publishing Date">
             <textarea id="content" name="description" placeholder="Content"></textarea>

@@ -11,7 +11,7 @@
         <div class="heading">
             <h2>Update Article</h2>
         </div>
-        <form action="{{ url_for('article_page',id=article['id']) }}" method="POST">
+        <form action="{{ url_for('edit_form',id=article['id']) }}" method="POST">
             <input id="title" name="title" type="text" value="{{ article['title'] }}" placeholder="Article Title">
             <input id="date" name="date" type="text" value="{{ article['date'] }}" placeholder="Publishing Date">
             <textarea id="content" name="description" placeholder="Content">{{ article['description'] }}</textarea>

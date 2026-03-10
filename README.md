@@ -1,6 +1,8 @@
-# Markdown Editor
+# Tech Press
 ---
 
-Made using NodeJS.<br>
-For collaborative markdown editing.<br>
-With custom urls so you can edit the same markdown on different devices for a interactive exprience.
+Personal blog website to write and publish articles on various topics and documenting the journey along the way. 
+
+### Tech Stack
+
+Python, Flask, HTML, CSS

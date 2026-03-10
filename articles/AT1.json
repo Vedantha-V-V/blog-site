@@ -1,6 +1,1 @@
-{
-    "id":1,
-    "title":"Welcome to the Hub",
-    "date":"March 07,2026",
-    "description":"Deep dive into tech and tech dose posted weekly.\nTech Stack used: HTML,CSS and Flask."
-}
+{"id": 1, "title": "Welcome to the Hub", "date": "March 07,2026", "description": "Deep dive into tech and tech dose posted weekly.\r\nTech Stack used: HTML,CSS and Flask."}

@@ -1,3 +1,7 @@
+body{
+    font-family:"Nunito";
+}
+
 .container{
     display:flex;
     flex-direction:column;
@@ -38,9 +42,16 @@ input,textarea{
     border-width:2px;
     padding-left:5px;
     text-align:left;
+    font-weight:600;
 }
 
 input::placeholder{
+    font-weight:600;
+    color:black;
+    text-align: left;
+}
+
+textarea::placeholder{
     font-weight:600;
     color:black;
     text-align: left;

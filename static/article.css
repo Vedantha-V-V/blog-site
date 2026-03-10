@@ -1,5 +1,10 @@
+body{
+    font-family:"Nunito";
+    font-weight:600;
+}
+
+
 .container{
-    font-family:Verdana;
     display:flex;
     flex-direction:column;
     margin:10px;
@@ -19,21 +24,15 @@
 }
 
 .title{
-    font-family:Verdana;
     padding-top:5px;
     color:black;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .date{
-    font-family:Verdana;
     padding-top:5px;
     color:gray;
     font-weight: 600;
-}
-
-p{
-    font-family:Verdana;
 }
 
 a{
